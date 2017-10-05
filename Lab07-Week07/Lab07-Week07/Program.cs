@@ -10,8 +10,8 @@ namespace Lab07_Week07
     {
         static void Main(string[] args)
         {
-            Person p = new Professor();
-            p.SayHi();
+            Teacher t = new Person();
+            t.SayHi();
             Console.ReadKey();
         }
     }
