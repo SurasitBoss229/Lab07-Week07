@@ -11,11 +11,16 @@ namespace Lab07_Week07
         static void Main(string[] args)
         {
             Teacher teacher = new Teacher("Tom", 350f);
-            // teacher work for 20Hr/month
+            Professor prof = new Professor("Jerry", 500f, 5000f);
+            // teacher work 20Hr/month
             Console.WriteLine("{0} charge = {1}", teacher.TypeName(),
                 teacher.CalculateCharge(20f));
+            // professor work 12Hr/month
+            Console.WriteLine("{0} charge = {1}", prof.TypeName(),
+                prof.CalculateCharge(12F));
             Console.ReadLine();
         }
+
         // constructor (for initial private/protected variables)
         public Teacher(string name, float billingRate)
         {
