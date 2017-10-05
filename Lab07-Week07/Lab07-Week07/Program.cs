@@ -6,11 +6,27 @@ using System.Threading.Tasks;
 
 namespace Lab07_Week07
 {
-    class Program
+    class Person
     {
-        static void Main(string[] args)
+        public virtual void SayHi()
         {
+            Console.WriteLine("Hi I'm a person");
+        }
+    }
 
+    class Student : Person
+    {
+        public override void SayHi()
+        {
+            Console.WriteLine("Hi I'm a student");
+        }
+    }
+
+    class Teacher : Person
+    {
+        public new void SayHi()
+        {
+            Console.WriteLine("Hi I'm a teacher");
         }
     }
 }
