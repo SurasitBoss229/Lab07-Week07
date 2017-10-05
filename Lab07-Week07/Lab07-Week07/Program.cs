@@ -43,7 +43,7 @@ namespace Lab07_Week07
                 if (value > 300 && value <= 450)
                     getSalary = value;
                 else
-                    throw (new Exception("Error!!!! invalid Salary"));
+                    throw (new Exception("Error!!! invalid Salary"));
             }
         }
     }
